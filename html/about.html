@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- FONTS -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="../pics/general/OBDV-favicon.png" type="image/x-icon">
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="../css/obdv-styles-main.css">
+    <link rel="stylesheet" href="../css/about-styles.css">
+
+    <title>OBDV-About</title>
+
+</head>
+
+<body>
+
+    <!-- SKIP TO CONTENT -->
+
+    <a href="#content" class="sr-only">Saltear Navegación - Ir al contenido principal</a>
+
+    <!-- NAV -->
+
+    <button class="button-hamburger" id="hamb">
+      <span class="material-icons-round">menu
+          </span>
+  </button>
+
+  <ul class="nav-list" id="menu">
+          <li class="nav-list-item">
+              <a href="../index.html" class="nav-list_item-link"><img src="../pics/general/OBDV-favicon.png" class="nav-logo" alt="Logo"></a>
+          </li>
+          <li class="nav-list-item">
+              <a href="about.html" class="nav-list_item-link">Acerca</a>
+          </li>
+          <li class="nav-list-item">
+              <a href="#" class="nav-list_item-link">English</a>
+          </li>
+          <form action="#" class="nav-form">
+              <input class="form-input" type="text">
+              <input class="button" type="submit" value="Buscar">
+          </form>
+  </ul> <!-- NAV END -->
+
+    <div class="title">
+      <h1>@gz32</h1>
+      <h2>Gonzalo Zacarias - Web Development</h2>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="portfolio">
+
+      <h2 class="portfolio-title">Mi portfolio</h2>
+      <p>Hacé click en las imágenes para ver mis sitios.</p>
+
+<ul class="portfolio-menu">
+
+  <li class="portfolio-item portf-1">
+      <a href="https://ajugarconhugo.netlify.app" class="portfolio-item-link">
+          <h3>A jugar con Hugo</h3>
+      </a>     
+  </li>
+
+  <li class="portfolio-item portf-2">
+      <a href="https://instapetgz.netlify.app" class="portfolio-item-link">
+          <h3>Instapet</h3>
+      </a>  
+  </li>
+
+  <li class="portfolio-item portf-4">
+      <a href="../index.html" class="portfolio-item-link">
+          <h3>OBDV</h3>
+      </a>
+  </li>
+</ul>
+
+  </div> <!-- END PORTFOLIO -->
+
+  <div class="about-text" id="content">
+    <h2>Acerca de mi</h2>
+    <p>Tengo 35 años, nací en Munro y vivo en Colegiales. Estudié Administracion en la UBA, trabajé muchos años en gastronomía, y ahora tengo ganas de estudiar de nuevo y cambiar de rubro. Estoy formándome en programación web para poder dar un cambio en mi carrera, aprender nuevas tecnologías y lograr una estabilidad profesional. Mi único método para registrar mis viajes fue sacar fotos, así que me propuse crear este sitio para crear una memoria, viendo fotos y escribiendo lo que recuerdo. Para mas información podés visitar mi <a href="https://www.linkedin.com/in/gonzalo-zacarias-59bb141b6/" class="description-text-link">Linkedin</a>.</p>
+  </div>
+
+  <div class="form">
+    <h2>Dejame tu mensaje</h2>
+    <form class="formulario" action="#" method="post">
+      <div class="form-label">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-input-about" id="name" name="nombre" required>
+      </div>
+      <div class="form-label">
+        <label for="number">Numero de teléfono</label>
+        <input type="number" class="form-input-about" id="number" name="numero">
+      </div>
+      <div class="form-label">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-input-about" id="email" name="e-mail">
+      </div>
+      <textarea id="consultas" cols="100%" rows="5"  maxlength="500" class="form-input-about" name="textarea" placeholder="Dejá tu mensaje acá"></textarea>
+      <div class="form-label form-check">
+        <input type="checkbox" class="form-check-input">
+        <label class="form-check-label" for="exampleCheck1" name="checkbox" required>Acepto enviar mi información de contacto</label>
+      </div>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </div>
+
+    <div class="copyright">
+        <h4>Copyright © Gonzalo Zacarias - 2021</h4>
+    </div>
+
+  <script src="../js/script.js"></script>
+
+</body>
+</html>

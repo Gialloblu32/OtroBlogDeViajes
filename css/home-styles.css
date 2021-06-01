@@ -1,0 +1,133 @@
+/* MAIN */
+
+body {
+    background-image: url(../pics/general/home-background.png);
+    background-repeat: repeat;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.title h1 {
+    margin: 10px auto;
+    margin-bottom: 0;
+    font-size: 220px;
+    max-width: 500px;
+    border: var(--darkBlue) solid 2px;
+    border-bottom: none;
+    background-color: var(--white);
+}
+
+.title h2 {
+    background-color: var(--white);
+    font-size: 40px;
+    max-width: 500px;
+    margin: 0px auto;
+    border: var(--darkBlue) solid 2px;
+    border-radius: 3px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+@media (max-width: 767px) {
+    .title h1 {
+        font-size: 90px;
+        max-width: 400px;
+    }
+
+    .title h2 {
+        font-size: 25px;
+        max-width: 400px;
+    }
+}
+
+/* COUNTRY MENU */
+
+.country-menu {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.country-menu-item {
+    font-size: 35px;
+    color: var(--darkBlue);
+    padding: 10px 10px;
+    background-color: var(--white);
+    opacity: 0.8;
+    border-radius: 10px;
+    flex-grow: 1;
+    list-style: none;
+    margin: 5px;
+}
+
+.country-menu-link {
+    text-decoration: none;
+    display: block;
+}
+
+.country-menu-item:hover {
+    background-color: var(--yellow);
+    opacity: 0.8;
+}
+
+.country-menu-item:active {
+    background-color: var(--yellow);
+    opacity: 1;
+}
+
+/* COUNTRY MENU MEDIA QUERY */
+
+@media (max-width: 767px) {
+
+.country-menu {
+    margin-bottom: 20px;
+    background-color: var(--white);
+    display: block;
+}
+
+.country-menu-item {
+    background-color: var(--white);
+    list-style: none;
+    text-align: center;
+}
+
+.country-menu-link {
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px var(--darkGrey);
+    margin: 2px;
+    display: block;
+    padding: 20px 20px;
+}
+
+.country-menu-link:active {
+    background-color: var(--yellow);
+    color: var(--darkBlue);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px var(--darkGrey);
+}
+
+.country-menu-link h3 {
+    font-size: 36px;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 3px 3px 3px var(--darkBlue);
+}
+
+.country-menu-link h3:active {
+    color: var(--yellow);
+}
+
+}
+
+/* MENU COUNTRY END */
+
+
+
+
+
+
+

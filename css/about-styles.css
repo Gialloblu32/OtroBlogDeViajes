@@ -1,0 +1,231 @@
+/* MAIN */
+
+body {
+    background-color: var(--lightYellow);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.title h1 {
+    margin: 10px auto;
+    margin-bottom: 0;
+    font-size: 120px;
+    max-width: 500px;
+    border: var(--darkBlue) solid 2px;
+    border-bottom: none;
+    background-color: var(--white);
+}
+
+.title h2 {
+    background-color: var(--white);
+    font-size: 35px;
+    max-width: 500px;
+    margin: 0px auto;
+    border: var(--darkBlue) solid 2px;
+    border-radius: 3px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+/* TITLE MEDIA QUERY */
+
+@media (max-width: 767px) {
+    .title h1 {
+        font-size: 90px;
+        max-width: 400px;
+
+    }
+
+    .title h2 {
+        font-size: 25px;
+        max-width: 400px;
+    }
+}
+
+
+/* PIC MENU */
+
+.portfolio {
+    background-color: white;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+}
+
+.portfolio p {
+    text-align: center;
+    background-color: white;
+
+}
+
+.portfolio-menu {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    background-color: var(--white);
+}
+
+.portfolio-item {
+    border: var(--darkGrey) solid 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px var(--darkGrey);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    width: 170px;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.portfolio-item:hover {
+    color: var(--orange);
+    opacity: 0.7;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px var(--darkGrey);
+}
+
+.portfolio-item:active {
+    opacity: 1;
+    color: var(--darkBlue);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px var(--darkGrey);
+}
+
+.portfolio-item-link {
+    text-decoration: none;
+    display: block;
+}
+
+.portfolio-item h3 {
+    font-size: 36px;
+    text-align: center;
+    padding: 190px 0px 5px 0px;
+    color: var(--white);
+    text-shadow: 3px 3px 3px var(--lightGrey);
+    opacity: 0;
+}
+
+
+/* MENU PICTURES */
+
+/* PICTURES MUST BE ==> WIDTH = 1978px & HEIGHT = 1978PX */
+
+.portf-1 {
+    background-image: url(../pics/portfolio/hugo-01.jpeg);
+}
+.portf-2 {
+    background-image: url(../pics/portfolio/instapet-01.jpeg);
+}
+.portf-3 {
+    background-image: url(#);
+}
+.portf-4 {
+    background-image: url(../pics/general/OBDV-favicon.png);
+}
+
+
+/* MENU PICTURES MEDIA QUERIES */
+
+@media (max-width: 767px) {
+
+    .portfolio-menu {
+        display: block;
+        padding: 0px;
+    }
+
+    .portfolio-item {
+        border-bottom: var(--darkGrey) solid 2px;
+        background-color: var(--white);
+        background-image: none;
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio-item-link {
+        display: block;
+    }
+
+    .portfolio-item-link:hover {
+        padding: none;
+    }
+
+    .portfolio-item h3 {
+        color: var(--darkBlue);
+        text-shadow: none;
+        opacity: 1;
+        padding: 5px 0px 5px 0px;
+    }
+
+}
+
+/* END MENU PICTURES */
+
+/* ABOUT */
+
+.about-text {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+ h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 3px;
+    color: var(--orange);
+}
+
+ p {
+    font-size: 24px;
+    text-align: justify;
+    margin: 0px 20px;
+    margin-bottom: 45px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--darkBlue);
+}
+
+.description-text-link {
+    color: var(--orange);
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.description-text-link:hover {
+    color: var(--darkBlue);
+}
+
+
+/* FORM */
+
+.form {
+    max-width: 750px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-label {
+    margin-bottom: 25px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: var(--orange);
+}
+
+.form-input-about {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: var(--darkBlue) solid 2px;
+    font-size: 20px;
+}
