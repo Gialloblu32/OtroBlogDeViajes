@@ -124,6 +124,7 @@
     font-weight: bold;
     border-radius: 5px;
     border: var(--darkBlue) solid 1px;
+    width: 100%;
 }
 
 @media (max-width: 767px) {
