@@ -17,8 +17,7 @@ body {
 .pic-text-container {
     background-size: cover;
     background-position: center;
-    margin-left: 10px;
-    margin-right: 10px;
+
     text-align: center;
     display: flex;
 }
@@ -109,6 +108,7 @@ body {
     }
 }
 
+
 /* PIC MENU */
 
 .pic-menu {
@@ -136,6 +136,7 @@ body {
     width: 170px;
     flex-grow: 1;
     list-style: none;
+    box-shadow: 4px 4px 8px var(--darkGrey);
 }
 
 .pic-desc-container:hover {
@@ -220,7 +221,6 @@ body {
     .desc-container-link {
         border-bottom: var(--darkGrey) solid 2px;
         background-color: var(--orange);
-        background-image: none;
     }
 
     .desc-container-link:hover {
@@ -229,10 +229,18 @@ body {
 
     .pic-desc-container {
         display: block;
-        width: 100%;
+        width: 90%;
+        margin: 5px auto;
+        border-radius: 5px;
     }
 
+    .pic-desc-container:hover {
+        opacity: 1;
+    }
 
+    .pic-desc-container:active {
+    box-shadow: 4px 4px 8px var(--lightGrey)
+    }
 
     .pic-desc-container h3 {
         color: var(--darkBlue);
@@ -244,9 +252,18 @@ body {
         text-align: center;
         padding: 5px;
         color: var(--darkBlue);
+        transform: scale(1);
+    }
+
+    .pic-desc-container h3:active {
+        color: var(--yellow);
     }
 
     .current {
+        display: none;
+    }
+
+    .hide {
         display: none;
     }
 }
@@ -340,15 +357,13 @@ body {
 }
 
 
-
 /* NEWSLETTER */
 
 .newsletter {
     margin: 80px auto;
     padding: 15px;
     border-radius: 6px;
-    border: 1px solid grey;
-    background-color: var(--darkGrey);
+    background-image: linear-gradient(to bottom right, var(--lightGrey) 1%, var(--darkGrey));
     display: flex;
     align-items: center;
     max-width: 850px;
@@ -361,13 +376,11 @@ body {
 }
 
 .news-text-a {
-    background-color: var(--darkGrey);
     font-size: 25px;
     padding-left: 20px;
 }
 
 .news-text-b {
-    background-color: var(--darkGrey);
     font-size: 30px;
     color: var(--yellow);
     text-align: end;
@@ -387,15 +400,15 @@ body {
 }
 
 .button-newsletter {
-    background-color: var(--darkGrey);
+    background-color: none;
     border: none;
-    padding: 8px 8px;
     color: var(--darkBlue);
     font-size: 26px;
     font-weight: bold;
     border-radius: 10px;
-    margin: 0px auto;
-    display: flex;
+    text-decoration: none;
+    display: block;
+    text-align: center  ;
 }
 
 .button-newsletter:hover {

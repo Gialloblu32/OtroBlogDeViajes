@@ -93,6 +93,12 @@ body {
     background-color: var(--white);
     list-style: none;
     text-align: center;
+    opacity: 1;
+}
+
+.country-menu-item:hover {
+    background-color: var(--white);
+    opacity: 1;
 }
 
 .country-menu-link {

@@ -47,7 +47,7 @@
 /* NAV BAR */
 
 .nav-list {
-    background-color: var(--darkGrey);
+    background-image: linear-gradient(var(--darkGrey) 1%, var(--lightGrey));
     display: flex;
     padding: 20px;
     list-style: none;
@@ -67,7 +67,6 @@
 .nav-logo:hover {
     transform: scale(1.2);
     box-shadow: 1px 1px 4px var(--lightGrey);
-
 }
 
 .nav-form {
@@ -99,8 +98,8 @@
 }
 
 .button {
-    background-color: var(--darkGrey);
-    border: none;
+    background-color: none;
+    border: var(--darkBlue) solid 1px;
     padding: 8px 8px;
     color: var(--darkBlue);
     font-size: 25px;
@@ -118,13 +117,11 @@
 .button-hamburger {
     display: none;
     font-size: 25px;
-    padding: 8px 8px;
+    padding: 10px 10px;
     background-color: var(--darkGrey);
-    color: var(--darkBlue);
-    font-weight: bold;
-    border-radius: 5px;
-    border: var(--darkBlue) solid 1px;
     width: 100%;
+    box-shadow: 3px 3px 3px var(--lightGrey);
+    border: none;
 }
 
 @media (max-width: 767px) {
@@ -141,6 +138,19 @@
         text-align: center;
         background-color: white;
         box-shadow: 3px 3px 3px var(--lightGrey);
+    }
+
+    .nav-list_item-link:hover {
+        color: var(--darkBlue);
+    }
+
+    .nav-list_item-link:active {
+        color: var(--orange);
+    }
+
+    .nav-logo:hover {
+        transform: scale(1);
+        box-shadow: none;
     }
 
     .appear {
@@ -160,7 +170,7 @@
 /* COPYRIGHT */
 
 .copyright {
-    background-color: var(--darkGrey);
+    background-image: linear-gradient(var(--lightGrey) 1%, var(--darkGrey));
     text-align: center;
     width: 100%;
     color: var(--darkBlue);

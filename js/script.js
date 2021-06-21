@@ -1,4 +1,3 @@
 hamb.addEventListener("click", () => {
-    console.log("Hiciste click!!");
-        menu.classList.toggle("appear")
+    menu.classList.toggle("appear")
 });
