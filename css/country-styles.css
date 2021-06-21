@@ -319,36 +319,26 @@ body {
 
 .live {
     background-color: white;
-}
-
-.live p {
-    text-align: center;
-    background-color: white;
+    padding: 10px;
 }
 
 .live-menu {
-    display: flex;
+    max-width: 850px;
+    margin: 0px auto;
 }
 
 .live-item {
-    margin: 30px;
-    width: 100px;
-    flex-grow: 1;
     list-style: none;
     overflow: hidden;
+    margin: 0px;
 }
 
 .live-item h3 {
     font-size: 36px;
     text-align: center;
-    padding: 190px 0px 5px 0px;
     color: var(--darkBlue);
 }
 
-.live-item-link {
-    text-decoration: none;
-    display: block;
-}
 
 
 /* NEWSLETTER */
